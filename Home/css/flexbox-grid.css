@@ -1,0 +1,88 @@
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .header {
+            background: linear-gradient(to bottom, #e52d27, #b31217);
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 4px solid white;
+            display: inline-block;
+            border-radius: 8px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .tile {
+            background-color: #e0e0e0;
+            width: 150px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .tile:hover {
+            background-color: #d1d1d1;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .content {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .content img {
+            max-width: 100px;
+            margin: 10px;
+        }
+
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .content table, .content th, .content td {
+            border: 1px solid black;
+        }
+
+        .content th, .content td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+ 
