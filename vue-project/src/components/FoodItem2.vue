@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mango">
       <h2>{{ name }}</h2>
       <p>{{ message }}</p>
     </div>
@@ -18,7 +18,7 @@
   
   <style>
 
-#app > div {
+.mango {
         border: dashed black 1px;
         display: inline-block;
         margin: 10px;
