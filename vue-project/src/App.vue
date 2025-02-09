@@ -23,7 +23,7 @@
   onMounted(() => {
     getCountries()
   })
-  
+
 </script>
 
 <style>
