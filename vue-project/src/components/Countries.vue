@@ -1,16 +1,46 @@
-<script setup>
-  import { ref, onMounted } from 'vue'
-  import { supabase } from './lib/supabaseClient'
+<template>
+  <h1>Countries</h1>
+  <ul>
+    <li v-for="countries in countries" :key="countries.id">{{ countries.name }}</li>
+  </ul>
+</template>
 
-  const countries = ref([])
+<script></script>
 
-  async function getCountries() {
-    const { data } = await supabase.from('countries').select()
-    countries.value = data
+<style>
+  #app > div {
+    border: dashed black 1px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightyellow;
   }
+</style>
 
-  onMounted(() => {
-    getCountries()
-  })
+<script setup>
+import { ref, onMounted } from 'vue'
+import { supabase } from '../lib/supabaseClient'
+
+const countries = ref([])
+
+async function getCountries() {
+const { data } = await supabase.from('countries').select()
+countries.value = data
+}
+
+onMounted(() => {
+getCountries()
+})
 
 </script>
+
+
+<style>
+#app > div {
+  border: dashed black 1px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightyellow;
+}
+</style>
