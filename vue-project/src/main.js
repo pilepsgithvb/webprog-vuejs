@@ -17,6 +17,6 @@ app.component('countries', Countries)
 app.component('comment-form', CommentForm)
 app.component('comment', Comment)
 app.component('personal-profile', PersonalProfile)
-app.component('rest-api', RestApi)
+app.component('rest-API', RestApi)
 
 app.mount('#app')
